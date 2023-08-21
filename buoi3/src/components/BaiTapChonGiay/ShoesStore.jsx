@@ -6,7 +6,7 @@ import data from '../../data/data.json'
 
 export default class ShoesStore extends Component {
   state={
-    productsData: data,
+    dataList: data,
    }
    showDesc=(desc)=>{
     alert(`description: ${desc}`)
@@ -15,7 +15,7 @@ export default class ShoesStore extends Component {
       return (
        <>
        <h1 className="text-center">Shoe Shop</h1>
-         <ProductList showDesc={this.showDesc} productsData={this.state.productsData}/> 
+         <ProductList showDesc={this.showDesc} dataList={this.state.dataList}/> 
        </>  
       );
     }
